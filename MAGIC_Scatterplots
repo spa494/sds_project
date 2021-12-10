@@ -1,0 +1,41 @@
+set.seed(42)
+dataframe1= dataframe1[sample(1:nrow(dataframe1)), ]
+dataframe1$ID<-seq.int(nrow(dataframe1))
+dataframe1$fLength <- as.numeric(as.character(dataframe1$fLength))
+dataframe1 %>% ggplot(aes(x=ID, y=fLength, color=class)) + geom_point() + ggtitle("fLength vs Class")
+
+
+dataframe1$fWidth <- as.numeric(as.character(dataframe1$fWidth))
+dataframe1 %>% ggplot(aes(x=ID, y=fWidth, color=class)) + geom_point() + ggtitle("fWidth vs Class")
+
+
+dataframe1$fSize <- as.numeric(as.character(dataframe1$fSize))
+dataframe1 %>% ggplot(aes(x=ID, y=fSize, color=class)) + geom_point() + ggtitle("fSize vs Class")
+
+
+dataframe1$fConc <- as.numeric(as.character(dataframe1$fConc))
+dataframe1 %>% ggplot(aes(x=ID, y=fConc, color=class)) + geom_point() + ggtitle("fConc vs Class")
+
+
+dataframe1$fConc1 <- as.numeric(as.character(dataframe1$fConc1))
+dataframe1 %>% ggplot(aes(x=ID, y=fConc1, color=class)) + geom_point() + ggtitle("fConc1 vs Class")
+
+
+dataframe1$fAsym <- as.numeric(as.character(dataframe1$fAsym))
+dataframe1 %>% ggplot(aes(x=ID, y=fAsym, color=class)) + geom_point() + ggtitle("fAsym vs Class")
+
+
+dataframe1$fM3Long <- as.numeric(as.character(dataframe1$fM3Long))
+dataframe1 %>% ggplot(aes(x=ID, y=fM3Long, color=class)) + geom_point() + ggtitle("fM3Long vs Class")
+
+
+dataframe1$fM3Trans <- as.numeric(as.character(dataframe1$fM3Trans))
+dataframe1 %>% ggplot(aes(x=ID, y=fM3Trans, color=class)) + geom_point() + ggtitle("fM3Trans vs Class")
+
+
+dataframe1$fAlpha <- as.numeric(as.character(dataframe1$fAlpha))
+dataframe1 %>% ggplot(aes(x=ID, y=fAlpha, color=class)) + geom_point() + ggtitle("fAlpha vs Class")
+
+
+dataframe1$fDist <- as.numeric(as.character(dataframe1$fDist))
+dataframe1 %>% ggplot(aes(x=ID, y=fDist, color=class)) + geom_point() + ggtitle("fDist vs Class")
